@@ -1,7 +1,7 @@
 # skroll
 USB HID scroll wheel module for custom keyboards/macropads using XIAO ESP32S3. Features Alps EC10E encoder with 24 detents for tactile scrolling feedback + button for left-click. Plug-and-play on Windows/Mac/Linux. Includes visual connection indicator. Perfect for adding physical scroll control to DIY input devices.
 
-Features
+**Features**
 
 Tactile Scrolling: Alps EC10E encoder with 24 mechanical detents provides satisfying click feedback with each scroll increment
 Smooth Operation: Physical wheel mass creates momentum for rapid scrolling while detents enable precise single-line control
@@ -10,7 +10,7 @@ Visual Feedback: Cursor draws a square pattern on connection to confirm device r
 Left Click: Integrated tactile button provides mouse click functionality
 Compact Design: Minimal footprint perfect for custom keyboard integration
 
-Hardware Requirements
+**Hardware Requirements**
 
 Seeed Studio XIAO ESP32S3
 Alps EC10E1220501 Rotary Encoder (12 pulses/revolution, 24 detents)
@@ -58,7 +58,7 @@ USB Mode: USB-OTG (TinyUSB)
 
 
 
-Installation
+**Installation**
 
 Clone this repository
 Open skroll.ino in Arduino IDE
@@ -66,7 +66,7 @@ Connect XIAO ESP32S3 via USB-C
 Upload the code
 Wait for cursor to draw square pattern (confirms successful connection)
 
-Usage
+**Usage**
 
 Scroll: Rotate the encoder wheel
 
@@ -77,17 +77,18 @@ Fast spin for momentum-based rapid scrolling
 Click: Press the button for left mouse click
 Direction: Swap encoder A/B connections if scroll direction is reversed
 
-Technical Details
+**Technical Details**
 
 Interrupt-driven quadrature decoding ensures no missed steps
 Hardware debouncing for reliable operation
 Adaptive scroll speed based on rotation velocity
 5-second programming window on startup for easy updates
 
-Background
+**Background**
 SKROLL was created in response to the discontinuation of the beloved Panasonic EVQWGD001 encoder, which had become a staple in the custom keyboard community for its excellent tactile feedback and reliability. With the EVQWGD001 no longer in production and existing stock depleted, the community was left searching for alternatives that could match its performance.
 This project aims to provide a modern, accessible replacement using readily available components while maintaining the tactile scrolling experience that made the EVQWGD001 so popular in custom keyboards and macropads.
-License
+
+**License**
 MIT License - see LICENSE file for details.
 Commercial Use
 While this project is open source under the MIT License, commercial users are kindly requested to:
@@ -99,7 +100,8 @@ Contact [your-email@example.com] for commercial support options
 This ensures continued development and support for the open source community.
 Contributing
 Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
-Acknowledgments
+
+**Acknowledgments**
 
 Built for the custom mechanical keyboard community
 Inspired by the need for better scroll control in creative applications
