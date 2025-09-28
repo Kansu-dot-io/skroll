@@ -22,7 +22,6 @@ A custom USB HID scroll wheel module designed for integration into mechanical ke
 
 ## Wiring Diagram
 
-`​``
 XIAO ESP32S3 (USB-C at top)
          ┌─────┐
 D0 ●─────┤     ├─────● USB
@@ -38,7 +37,6 @@ Connections:
 - Button Pin1 → D2 (GPIO3) + 10kΩ pull-up to 3V3  
 - Button Pin2 → GND
 - 0.1µF capacitor across button pins
-`​``
 
 ## Software Setup
 
