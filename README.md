@@ -22,6 +22,7 @@ A custom USB HID scroll wheel module designed for integration into mechanical ke
 
 ## Wiring Diagram
 
+```
 XIAO ESP32S3 (USB-C at top)
          ┌─────┐
 D0 ●─────┤     ├─────● USB
@@ -37,10 +38,11 @@ Connections:
 - Button Pin1 → D2 (GPIO3) + 10kΩ pull-up to 3V3  
 - Button Pin2 → GND
 - 0.1µF capacitor across button pins
+```
 
 ## Software Setup
 
-1. **Install Arduino IDE** (2.0 or later)
+1. **Install Arduino IDE** (2.0 or later) - used as the development environment for ESP32
 2. **Add ESP32 board support**:
    - File → Preferences → Additional Boards Manager URLs
    - Add: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
@@ -55,12 +57,12 @@ Connections:
 ## Installation
 
 1. Clone this repository:
-   `​``bash
+   ```bash
    git clone https://github.com/yourusername/skroll.git
-   `​``
+   ```
 2. Open `skroll.ino` in Arduino IDE
 3. Connect XIAO ESP32S3 via USB-C
-4. Upload the code
+4. Upload the ESP32 firmware
 5. Wait for cursor to draw square pattern (confirms successful connection)
 
 ## Usage
@@ -76,7 +78,8 @@ Connections:
 - Interrupt-driven quadrature decoding ensures no missed steps
 - Hardware debouncing for reliable operation
 - Adaptive scroll speed based on rotation velocity
-- 5-second programming window on startup for easy updates
+- 5-second programming window on startup for easy firmware updates
+- Built for ESP32-S3 platform using Arduino framework
 
 ## Background
 
